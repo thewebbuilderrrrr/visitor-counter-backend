@@ -6,7 +6,8 @@ const { Pool } = pkg;
 
 const app = express();
 app.use(cors());
-
+ origin: "https://thewebbuilderrrrr.github.io"
+}));
 // Connect to PostgreSQL using your Render DATABASE_URL
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
